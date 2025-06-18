@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresos Grama</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar los colores de la marca y la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Define Inter como la fuente principal
+                    },
+                    colors: {
+                        primary: '#a10000', // Rojo borgoña para el color principal (de tu logo)
+                        secondary: '#4a4a4a', // Gris oscuro para elementos secundarios (de tu logo)
+                        accent: '#ffc107',   // Un color de acento (amarillo brillante)
+                        lightBg: '#f8f9fa',  // Un gris muy claro para fondos de secciones/cards
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para asegurar que la fuente Inter se aplique globalmente y para ajustes visuales */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333333; /* Color de texto por defecto */
+            background-color: #f0f2f5; /* Fondo suave para toda la página */
+        }
+        /* Para un scroll suave al hacer clic en los enlaces de navegación */
+        html {
+            scroll-behavior: smooth;
+        }
+        .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+</head>
+<a href="https://wa.me/5491131605381" class="whatsapp-float" target="_blank">
+    <img src="whatsapp-icon.png" width=50px ="WhatsApp">
+</a>
+
+<body class="bg-gray-100 antialiased">
+    <!-- Sección del Encabezado (Header) -->
+    <header class="bg-primary text-white shadow-lg fixed w-full z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo de la Imprenta -->
+             <img src="logo_gramaBN.png" width=200 px>
+            <!-- Aquí puedes colocar tu logo real. Asegúrate de que la URL de la imagen sea correcta. -->
+            <!-- Se recomienda usar un logo en formato SVG o PNG con fondo transparente para mejor calidad. -->
+            <!-- Menú de Navegación -->
+            <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-x-6">
+                <a href="#home" class="px-3 py-2 text-lg rounded-md hover:bg-white hover:text-primary transition-colors duration-300">Inicio</a>
+                <a href="#servicios" class="px-3 py-2 text-lg rounded-md hover:bg-white hover:text-primary transition-colors duration-300">Servicios</a>
+                <a href="#portfolio" class="px-3 py-2 text-lg rounded-md hover:bg-white hover:text-primary transition-colors duration-300">Portfolio</a>
+                <a href="#nosotros" class="px-3 py-2 text-lg rounded-md hover:bg-white hover:text-primary transition-colors duration-300">Nosotros</a>
+                <a href="#contacto" class="px-3 py-2 text-lg rounded-md hover:bg-white hover:text-primary transition-colors duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <header>
+        <img src="logo_encabezado.png" width=1300 px ="Impresos Grama">
+    </header>
+    <!-- Sección Principal (Hero Section) -->
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Nuestros Servicios de Impresión</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Servicio 1: Carpetas -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="carpetas.jpg" alt="Icono de Carpeta" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Carpetas Corporativas</h3>
+                    <p class="text-gray-600">Impresión de carpetas personalizadas con tu logo y diseño. Ideales para presentaciones y eventos.</p>
+                </div>
+                <!-- Servicio 2: Tarjetas -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Tarjetas" alt="Icono de Tarjeta" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Tarjetas Personales</h3>
+                    <p class="text-gray-600">Diseñamos e imprimimos tarjetas de presentación de alta calidad con diversos acabados.</p>
+                </div>
+                <!-- Servicio 3: Sobres -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Sobres" alt="Icono de Sobre" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sobres Membretados</h3>
+                    <p class="text-gray-600">Sobres personalizados para tu correspondencia, reforzando la imagen de tu marca.</p>
+                </div>
+                <!-- Servicio 4: Folletos -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="folletos.jpg" alt="Icono de Folleto" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Folletos y Dípticos</h3>
+                    <p class="text-gray-600">Impresión de folletos informativos, dípticos y trípticos para promocionar tus productos y servicios.</p>
+                </div>
+                <!-- Servicio 5: Volantes -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Volantes" alt="Icono de Volante" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Volantes y Flyers</h3>
+                    <p class="text-gray-600">La forma más efectiva de llegar a tu público con volantes de alta calidad y diseños atractivos.</p>
+                </div>
+                <!-- Servicio 6: Autoadhesivos -->
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="etiquetas.jpg" alt="Icono de Autoadhesivo" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Autoadhesivos y Etiquetas</h3>
+                    <p class="text-gray-600">Etiquetas y autoadhesivos personalizados para productos, packaging y señalética.</p>
+                </div>
+                 <!-- Servicio 7: Facturas -->
+                 <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Facturas" alt="Icono de Factura" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Facturas y Documentos Fiscales</h3>
+                    <p class="text-gray-600">Impresión de facturas, remitos y otros documentos fiscales con las normativas vigentes.</p>
+                </div>
+                 <!-- Servicio 8: Remitos -->
+                 <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Remitos" alt="Icono de Remito" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Remitos y Recibos</h3>
+                    <p class="text-gray-600">Impresión de remitos y recibos personalizados para un control eficiente de tus entregas.</p>
+                </div>
+
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Almanaques" alt="Almanaques" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Almanaques y Calendarios</h3>
+                    <p class="text-gray-600">Almanaques de Escritorio, de bolsillo, de pared.</p>
+                </div>
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Impresión 3D" alt="Impresión 3D" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Impresión 3D</h3>
+                    <p class="text-gray-600">Impresión 3D.</p>
+                </div>
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Manteles de Papel" alt="Manteles de Papel" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Manteles de Papel</h3>
+                    <p class="text-gray-600">Personalizables con tu logo.</p>
+                </div>
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Revistas" alt="Revistas" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Revistas</h3>
+                    <p class="text-gray-600">Revistas Promocionales, Boletines, Catálogos, Manuales</p>
+                </div>
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Cajas - Estuches" alt="Cajas - Estuches" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Cajas - Estuches</h3>
+                    <p class="text-gray-600">Packaging, Cajas de Cartulina</p>
+                </div>
+                <div class="bg-lightBg rounded-lg shadow-xl p-8 text-center transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 border border-gray-200">
+                    <img src="https://placehold.co/100x100/800020/ffffff?text=Recetarios" alt="Recetarios" class="mx-auto mb-6 rounded-full border-4 border-primary p-2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Recetarios</h3>
+                    <p class="text-gray-600">Recetarios, Blocks de Notas, Cuadernos Personalizados</p>
+                </div>
+                <!-- Agrega más servicios según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Portfolio/Galería -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Nuestro Portfolio de Trabajos</h2>
+            <p class="text-center text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Una muestra de la calidad y versatilidad de nuestras impresiones offset. ¡Aquí es donde tus fotos reales lucirán!
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Ítem del Portfolio 1 (Carpeta) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/333/fff?text=Carpeta+Diseño+Exclusivo" alt="Carpeta Corporativa" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Carpeta Corporativa</h3>
+                        <p class="text-gray-600">Impresión offset de alta calidad con acabado mate.</p>
+                    </div>
+                </div>
+                <!-- Ítem del Portfolio 2 (Tarjetas) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/444/fff?text=Tarjetas+Laca+UV" alt="Tarjetas Personales con Laca Sectorizada" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Tarjetas con Laca UV</h3>
+                        <p class="text-gray-600">Tarjetas personales con detalles en laca sectorizada.</p>
+                    </div>
+                </div>
+                <!-- Ítem del Portfolio 3 (Folleto) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/555/fff?text=Folleto+Díptico" alt="Folleto Díptico Informativo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Folleto Díptico</h3>
+                        <p class="text-gray-600">Impresión de folletos a todo color, ideal para promociones.</p>
+                    </div>
+                </div>
+                <!-- Ítem del Portfolio 4 (Autoadhesivo) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/666/fff?text=Etiquetas+Personalizadas" alt="Etiquetas Autoadhesivas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Etiquetas Autoadhesivas</h3>
+                        <p class="text-gray-600">Variedad de formas y tamaños para tus etiquetas.</p>
+                    </div>
+                </div>
+                <!-- Puedes duplicar estos bloques y cambiar las imágenes y descripciones por tus trabajos reales -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-primary mb-6">Sobre Nuestra Imprenta</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Con 30 años de experiencia en la industria gráfica en San Isidro, nuestra imprenta se especializa en brindar soluciones de impresión comercial de la más alta calidad. Nos enorgullece nuestra atención al detalle, la velocidad de entrega y el compromiso con cada cliente.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Utilizamos tecnología de vanguardia y un equipo de profesionales dedicados para asegurar que cada proyecto, desde una tarjeta personal hasta un gran volumen de folletos, supere tus expectativas. Tu éxito es nuestra prioridad.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://placehold.co/500x350/800020/ffffff?text=Nuestra+Imprenta" alt="Imagen de la Imprenta" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Contacto</h2>
+            <div class="flex flex-col md:flex-row gap-12 items-start justify-center">
+                <!-- Formulario de Contacto -->
+                <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Envíanos tu Consulta</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-base" placeholder="Tu Nombre" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-base" placeholder="tu.email@ejemplo.com" required>
+                        </div>
+                        <div>
+                            <label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Teléfono (Opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-base" placeholder="Ej: 11 1234-1234">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-base" placeholder="Cuéntanos sobre tu proyecto o consulta..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-md text-lg font-semibold shadow-lg hover:bg-red-900 hover:scale-105 transition-all duration-300 transform">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto Directa y Mapa -->
+                <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Nuestra Información</h3>
+                    <ul class="space-y-4 text-lg text-gray-700 mb-8">
+                        <li><strong>Dirección:</strong> Av. Avelino Rolón 787, Boulogne (1609), Buenos Aires</li>
+                        <li><strong>Teléfono:</strong> (011) 4747-2198</a></li>
+                        <li><strong>WhatsApp:</strong> <a href="tel:+5491131605381" class="text-primary hover:underline">+54 9 11 3160-5381</a></li>
+                        <li><strong>Email:</strong> <a href="impresosgrama@gmail.com" class="text-primary hover:underline">impresosgrama@gmail.com</a></li>
+                        <li><strong>Horario:</strong> Lunes a Viernes de 9:00 a 17:00 hs.</li>
+                    </ul>
+                    <!-- Placeholder para Mapa de Google Maps -->
+                        <!-- Para incrustar un mapa real, obtén el código de Google Maps Embed y pégalo aquí -->
+                        <!-- Ejemplo: <iframe src="https://www.google.com/maps/embed?..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.5805148373363!2d-58.55721589790887!3d-34.498427111864416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba82cfd33473%3A0xfb4b80880727ba33!2sAv.%20Avelino%20Rol%C3%B3n%20787%2C%20B1609HTH%20Boulogne%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1749004852539!5m2!1ses!2sar" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-sm md:flex md:justify-between md:items-center">
+            <p>&copy; 2025 Impresos Grama. Todos los derechos reservados.</p>
+            <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-x-4">
+                <a href="#privacidad" class="hover:underline">Política de Privacidad</a>
+                <a href="#terminos" class="hover:underline">Términos y Condiciones</a>
+                <!-- Si tienes redes sociales, puedes añadir enlaces aquí -->
+                <!-- <a href="https://instagram.com/tuimprenta" target="_blank" class="hover:underline">Instagram</a> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
